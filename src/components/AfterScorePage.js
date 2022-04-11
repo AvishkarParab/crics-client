@@ -12,7 +12,7 @@ const ScorePage = ({bat,open,setBat,setOpen,bowl,setBowl}) => {
     const tosspage = async()=>{
       try{
   
-        const res = await fetch('/getmatchdata',{
+        const res = await fetch('https://cricket-score-server.herokuapp.com/getmatchdata',{
           method:"GET",
           headers:{
             "Content-Type": "application/json",

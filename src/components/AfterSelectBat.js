@@ -39,7 +39,7 @@ const [name,setname] = useState('');
 const teamapage = async()=>{
     try{
 
-      const res = await fetch('/toss',{
+      const res = await fetch('https://cricket-score-server.herokuapp.com/toss',{
         method:"GET",
         headers:{
           "Content-Type": "application/json",
